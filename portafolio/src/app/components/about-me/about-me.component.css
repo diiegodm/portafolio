@@ -1,0 +1,16 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  /* que ocupe la mitad izquierda */
+  width: 50%;
+
+  /* color negro con opacidad */
+  background-color: rgba(0, 0, 0, 0.6);
+
+  /* solo bordes izquierdos redondeados */
+  border-top-left-radius: 0.5rem;  /* equivale a rounded-l-lg */
+  border-bottom-left-radius: 0.5rem;
+}
