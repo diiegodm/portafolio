@@ -1,140 +1,182 @@
-<!-- ===================== RESUME ANIMADO ===================== -->
+<!-- ===================== RESUME PRO ===================== -->
 <section id="resume"
-  class="bg-black text-white py-16 px-8 relative min-h-screen bg-cover bg-center"
-  style="background-image: url('../../../assets/imagenes/fondo5.jpg');">
+  class="relative bg-black text-white py-24 px-6 overflow-hidden bg-cover bg-center"
+  style="background-image: url('/assets/imagenes/fondo5.jpg');">
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+  <!-- overlay para legibilidad -->
+  <div class="absolute inset-0 "></div>
 
-    <!-- ===================== COLUMNA IZQUIERDA ===================== -->
-    <div class="space-y-10 opacity-0 transform translate-x-8 animate-fade-slide-left">
+  <div class="relative max-w-7xl mx-auto space-y-24 z-10">
 
-      <!-- Habilidades de Software -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">HABILIDADES DE SOFTWARE</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+    <!-- ================================================= -->
+    <!-- PERFIL PROFESIONAL -->
+    <!-- ================================================= -->
+    <div class=" animate-fade-up text-center max-w-4xl mx-auto">
 
-          <!-- Angular -->
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-            <div class="text-red-500 text-4xl mb-3 flex justify-center">
-              <i class="fab fa-angular"></i>
+      <h2 class="text-4xl font-bold mb-6 border-b-2 border-blue-500 inline-block pb-2">
+        Perfil Profesional
+      </h2>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        Desarrollador Full Stack especializado en
+        <span class="text-blue-400 font-semibold">Angular</span> y
+        <span class="text-blue-400 font-semibold">Node.js</span>.
+        Experiencia práctica creando aplicaciones web completas, APIs REST,
+        autenticación JWT y despliegues cloud. Enfocado en soluciones
+        funcionales, escalables y bien estructuradas.
+      </p>
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- GRID PRINCIPAL -->
+    <!-- ================================================= -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+
+      <!-- ================================================= -->
+      <!-- STACK TECNOLÓGICO -->
+      <!-- ================================================= -->
+      <div class="space-y-14  animate-fade-left">
+
+        <!-- STACK PRINCIPAL -->
+        <div>
+          <h3 class="text-2xl font-bold border-b border-gray-700 pb-2 mb-8">
+            Stack Principal
+          </h3>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+
+            <div class="main-skill">
+              <i class="fab fa-angular text-red-500 text-5xl"></i>
+              <p>Angular</p>
             </div>
-            <h3 class="text-lg font-semibold text-center">Angular</h3>
-          </div>
 
-          <!-- JavaScript -->
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-            <div class="text-yellow-400 text-4xl mb-3 flex justify-center">
-              <i class="fab fa-js"></i>
+            <div class="main-skill">
+              <i class="fab fa-node text-green-500 text-5xl"></i>
+              <p>Node.js</p>
             </div>
-            <h3 class="text-lg font-semibold text-center">JavaScript</h3>
-          </div>
 
-          <!-- Node.js -->
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-            <div class="text-green-500 text-4xl mb-3 flex justify-center">
-              <i class="fab fa-node"></i>
+            <div class="main-skill">
+              <i class="fas fa-leaf text-green-400 text-5xl"></i>
+              <p>MongoDB</p>
             </div>
-            <h3 class="text-lg font-semibold text-center">Node.js</h3>
-          </div>
 
-          <!-- MongoDB / MySQL -->
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-            <div class="text-blue-400 text-4xl mb-3 flex justify-center">
-              <i class="fas fa-database"></i>
+            <div class="main-skill">
+              <i class="fas fa-database text-blue-400 text-5xl"></i>
+              <p>MySQL</p>
             </div>
-            <h3 class="text-lg font-semibold text-center">MongoDB & MySQL</h3>
-          </div>
 
-          <!-- Tailwind -->
-          <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-            <div class="text-cyan-400 text-4xl mb-3 flex justify-center">
-              <i class="fab fa-css3-alt"></i>
+            <div class="main-skill">
+              <i class="fab fa-css3-alt text-cyan-400 text-5xl"></i>
+              <p>Tailwind</p>
             </div>
-            <h3 class="text-lg font-semibold text-center">CSS & Tailwind</h3>
+
           </div>
         </div>
-      </div>
 
-      <!-- Idiomas -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">IDIOMAS</h3>
-        <div class="space-y-4">
-          <div>
-            <p class="font-semibold">Inglés (Intermedio B1/B2)</p>
-            <div class="w-full bg-gray-700 rounded-full h-2">
+
+        <!-- OTRAS TECNOLOGÍAS -->
+        <div>
+          <h4 class="text-blue-400 font-semibold mb-5">
+            Otras Tecnologías
+          </h4>
+
+          <div class="grid grid-cols-2 gap-4">
+
+            <div class="sub-skill"><i class="fas fa-server"></i> Express.js</div>
+            <div class="sub-skill"><i class="fas fa-plug"></i> APIs REST</div>
+            <div class="sub-skill"><i class="fas fa-lock"></i> JWT</div>
+            <div class="sub-skill"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="sub-skill"><i class="fab fa-github"></i> GitHub</div>
+            <div class="sub-skill"><i class="fas fa-paper-plane"></i> Postman</div>
+            <div class="sub-skill"><i class="fas fa-cloud"></i> Render</div>
+
+          </div>
+
+          <!-- IDIOMAS -->
+           <div>
+          <h4 class="text-blue-400 font-semibold mb-5 mt-5">Idiomas</h4>
+
+          <p class="text-gray-400">Español (Nativo)</p>
+          <p class="text-gray-400">Inglés (B1/B2 – lectura técnica)</p>
+          <div class="w-full bg-gray-700 rounded-full h-2">
               <div class="bg-blue-500 h-2 rounded-full w-7/12"></div>
             </div>
-          </div>
         </div>
+
+        </div>
+
       </div>
 
-      <!-- Habilidades Personales -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">HABILIDADES PERSONALES</h3>
-        <p>Resolución de Problemas · Liderazgo · Adaptabilidad · Comunicación · Trabajo en Equipo</p>
+
+      <!-- ================================================= -->
+      <!-- EXPERIENCIA -->
+      <!-- ================================================= -->
+      <div class="space-y-10  animate-fade-up delay-200">
+
+        <h3 class="text-2xl font-bold border-b border-gray-700 pb-2">
+          Experiencia
+        </h3>
+
+        <!-- EXPERIENCIA TECH DESTACADA -->
+        <div class="bg-gray-900 border border-blue-500 rounded-2xl p-6 shadow-xl">
+
+          <p class="text-blue-400 font-semibold text-lg">
+            Full Stack Developer – Freelance
+          </p>
+
+          <p class="text-xs text-gray-500 mb-4">2024 – Presente</p>
+
+          <ul class="text-sm text-gray-300 space-y-2">
+            <li>• Desarrollo de aplicaciones completas con Angular + Node.js</li>
+            <li>• Creación de APIs REST y arquitectura backend</li>
+            <li>• Autenticación JWT y control de acceso</li>
+            <li>• Integración con MongoDB y MySQL</li>
+            <li>• Deploy y mantenimiento en cloud (Render)</li>
+          </ul>
+        </div>
+
+        <!-- EXPERIENCIA SECUNDARIA -->
+        <div class="text-gray-400 text-sm">
+          <p class="text-white font-semibold">Gerente – Texas Roadhouse</p>
+          Liderazgo de equipos (+15) · Gestión operativa · Trabajo bajo presión
+        </div>
+
+        <div class="text-gray-400 text-sm">
+          <p class="text-white font-semibold">Jefe de Cuadrilla – Constructora</p>
+          Coordinación de personal · Supervisión de procesos
+        </div>
+
       </div>
 
-    </div>
 
-    <!-- ===================== COLUMNA CENTRAL ===================== -->
-    <div class="space-y-10 opacity-0 transform translate-x-8 animate-fade-slide-up delay-200">
+      <!-- ================================================= -->
+      <!-- EDUCACIÓN + SOFT -->
+      <!-- ================================================= -->
+      <div class="space-y-10  animate-fade-right delay-400">
 
-      <!-- Experiencia -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">EXPERIENCIA</h3>
-        <ul class="space-y-4">
-          <li>
-            <p class="font-semibold">Desarrollador Full Stack (Freelance)</p>
-            <p class="text-sm text-gray-400">Desarrollo de proyectos personales y aplicaciones web para clientes pequeños (2024 - Presente)</p>
-          </li>
-          <li>
-            <p class="font-semibold">Gerente en Restaurante</p>
-            <p class="text-sm text-gray-400">Texas Road House · Bloomington, IN, USA (2021 - 2024)<br>
-              Liderazgo de equipos de +15 personas, gestión de procesos y atención al cliente.</p>
-          </li>
-          <li>
-            <p class="font-semibold">Jefe de Cuadrilla de Obra</p>
-            <p class="text-sm text-gray-400">Constructora Moressa (2020 - 2021)<br>
-              Coordinación de proyectos de construcción y supervisión de personal.</p>
-          </li>
-        </ul>
-      </div>
+        <h3 class="text-2xl font-bold border-b border-gray-700 pb-2">
+          Educación
+        </h3>
 
-      <!-- Educación -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">EDUCACIÓN</h3>
-        <p class="font-semibold">Ingeniería Civil (2016 - 2020)</p>
-        <p class="text-sm text-gray-400">Universidad Francisco de Paula Santander</p>
-        <p class="font-semibold mt-4">Bootcamp Full Stack Developer (2025)</p>
-        <p class="text-sm text-gray-400">Upgrade Hub Institute · Angular, Node.js, Bases de Datos, DevOps</p>
-      </div>
+        <div>
+          <p class="text-blue-400 font-semibold">Bootcamp Full Stack Developer</p>
+          <p class="text-gray-400 text-sm">Angular · Node · MongoDB · MySQL · DevOps</p>
+        </div>
 
-    </div>
+        <div>
+          <p class="text-blue-400 font-semibold">Ingeniería Civil</p>
+          <p class="text-gray-400 text-sm">2016 – 2020</p>
+        </div>
 
-    <!-- ===================== COLUMNA DERECHA ===================== -->
-    <div class="space-y-10 opacity-0 transform translate-x-8 animate-fade-slide-right delay-400">
-
-      <!-- Qué puedo hacer -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">¿QUÉ PUEDO HACER?</h3>
-        <ul class="space-y-2 text-sm text-gray-300">
-          <li>Desarrollo Frontend · Diseño Responsivo</li>
-          <li>Desarrollo Backend · REST APIs · Bases de Datos</li>
-          <li>Optimización de Rendimiento · Buenas Prácticas de Seguridad</li>
-        </ul>
-      </div>
-
-      <!-- Habilidades Extra -->
-      <div>
-        <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">HABILIDADES EXTRA</h3>
-        <ul class="space-y-2 text-sm text-gray-300">
-          <li>Git & GitHub · Metodologías Ágiles</li>
-          <li>DevOps Básico · Despliegue en la Nube</li>
-          <li>Resolución de Problemas · Pensamiento Estratégico</li>
-        </ul>
-      </div>
-
-      <!-- Hobbies -->
+        <div>
+          <h4 class="font-semibold mb-2">Habilidades Personales</h4>
+          <p class="text-gray-400 text-sm">
+            Resolución de problemas · Comunicación · Trabajo en equipo · Adaptabilidad
+          </p>
+        </div>
+        
+        <!-- Hobbies -->
       <div>
         <h3 class="text-xl font-bold border-b border-gray-700 pb-2 mb-4">PASATIEMPOS E INTERESES</h3>
         <div class="flex flex-wrap gap-4">
@@ -145,32 +187,47 @@
         </div>
       </div>
 
-    </div>
 
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- ===================== ESTILOS ANIMACIONES ===================== -->
+
+
+<!-- ===================== ESTILOS + ANIMACIONES ===================== -->
 <style>
-@keyframes fadeSlideLeft {
-  0% { opacity: 0; transform: translateX(-2rem); }
-  100% { opacity: 1; transform: translateX(0); }
+.main-skill{
+  @apply bg-gray-900 rounded-2xl p-8 flex flex-col items-center justify-center
+  font-semibold shadow-lg border border-gray-800
+  hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 gap-3;
 }
 
-@keyframes fadeSlideRight {
-  0% { opacity: 0; transform: translateX(2rem); }
-  100% { opacity: 1; transform: translateX(0); }
+.sub-skill{
+  @apply bg-gray-800 rounded-lg p-3 flex items-center gap-2 text-sm
+  hover:bg-gray-700 transition;
 }
 
-@keyframes fadeSlideUp {
-  0% { opacity: 0; transform: translateY(2rem); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
 }
 
-.animate-fade-slide-left { animation: fadeSlideLeft 0.8s forwards; }
-.animate-fade-slide-right { animation: fadeSlideRight 0.8s forwards; }
-.animate-fade-slide-up { animation: fadeSlideUp 0.8s forwards; }
+@keyframes fadeLeft{
+  from{opacity:0;transform:translateX(-40px)}
+  to{opacity:1;transform:translateX(0)}
+}
 
-.delay-200 { animation-delay: 0.2s; }
-.delay-400 { animation-delay: 0.4s; }
+@keyframes fadeRight{
+  from{opacity:0;transform:translateX(40px)}
+  to{opacity:1;transform:translateX(0)}
+}
+
+.animate-fade-up{animation:fadeUp .9s forwards}
+.animate-fade-left{animation:fadeLeft .9s forwards}
+.animate-fade-right{animation:fadeRight .9s forwards}
+
+.delay-200{animation-delay:.2s}
+.delay-400{animation-delay:.4s}
 </style>
