@@ -1,46 +1,75 @@
-<section class="relative h-screen bg-cover bg-center"
-  style="background-image: url('/assets/imagenes/fono11.jpg');">
-  <div class="absolute inset-0 bg-opacity-10 flex items-center justify-center px-4">
+<section class="relative h-screen overflow-hidden bg-cover bg-center" style="background-image: url('/assets/imagenes/fono11.jpg');">
+
+  <!-- Contenido centrado -->
+  <div class="relative z-10 flex items-center justify-center h-full px-4">
     <div class="flex flex-col md:flex-row w-full max-w-6xl">
 
-      <!-- Columna izquierda: foto -->
-      <!-- <div class="md:w-1/2 flex justify-center items-center">
-        <img src="../../../assets/imagenes/fondo.jpg" alt="Foto Diego Arevalo" class="rounded-lg shadow-lg max-w-full h-auto">
-      </div> -->
-
-      <!-- Columna derecha: texto alineado a la derecha -->
+      <!-- Columna derecha: texto -->
       <div class="md:w-1/2 flex flex-col justify-center text-white items-start px-9 mb-4 md:mb-0 mt-60">
-        <h2 class="text-5xl md:text-6xl  mb-7 text-right">Diego Arevalo</h2>
-        <p class="text-lg md:text-3xl mb-8 text-right">Developer Full Stack</p>
 
-        <!-- Botones juntos alineados a la derecha -->
-        <div class="flex gap-4 justify-end w-full">
-          <button type="button"
-            class="py-2.5 px-5 text-sm items-start font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-              <a href="#contact">Contacto</a>
-          </button>
+        <!-- Nombre con animación fade + slide -->
+        <h2 class="text-5xl md:text-6xl mb-4 font-bold opacity-0 transform translate-x-8 animate-fade-slide-right">
+          Diego Arévalo C.
+        </h2>
 
-          <button type="button"
-            class="py-2.5 px-5 text-sm items-start font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-            <a href="#folio">Proyectos</a>
-          </button>
+        <!-- Perfil profesional con animación delay -->
+        <p class="text-lg md:text-2xl mb-6 text-right max-w-md opacity-0 transform translate-x-8 animate-fade-slide-right delay-200">
+          Desarrollador Full Stack con formación intensiva y experiencia práctica en la creación de aplicaciones web completas. Especializado en Node.js y Angular. Abierto a proyectos freelance y oportunidades junior.
+        </p>
+
+        <!-- Botones con efecto hover -->
+        <div class="flex gap-4 justify-end w-full opacity-0 transform translate-x-8 animate-fade-slide-right delay-400">
+          <a href="#contacto"
+             class="py-2.5 px-5 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg">
+            Contacto
+          </a>
+          <a href="#folio"
+             class="py-2.5 px-5 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-lg">
+            Proyectos
+          </a>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
-  <!-- Redes sociales (inferior izquierda) -->
-  <div class="absolute bottom-4 left-4 flex space-x-6 text-white text-2xl">
-    <a href="https://github.com/diiegodm" target="_blank" class="hover:text-blue-500">
-     <i class="fab fa-github"></i>
-
+  <!-- Redes sociales -->
+  <div class="absolute bottom-4 left-4 flex space-x-6 text-white text-2xl z-10">
+    <a href="https://github.com/diiegodm" target="_blank" class="hover:text-blue-500 transition-colors duration-300">
+      <i class="fab fa-github"></i>
     </a>
-    <a href="https://www.instagram.com/diegoarevaloc17/" target="_blank" class="hover:text-pink-500">
+    <a href="https://www.instagram.com/diegoarevaloc17/" target="_blank" class="hover:text-pink-500 transition-colors duration-300">
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="https://www.linkedin.com/in/diegoarevaloc/" target="_blank" class="hover:text-blue-400">
+    <a href="https://www.linkedin.com/in/diegoarevaloc/" target="_blank" class="hover:text-blue-400 transition-colors duration-300">
       <i class="fab fa-linkedin"></i>
     </a>
   </div>
+
 </section>
+
+<!-- Animaciones con Tailwind + keyframes -->
+<style>
+@keyframes fadeSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-slide-right {
+  animation: fadeSlideRight 0.8s forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+</style>

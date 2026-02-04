@@ -1,23 +1,31 @@
+<!-- ===================== PROYECTOS ANIMADO ===================== -->
 <section class="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto">
+
     <!-- Título -->
-    <h2 class="text-3xl font-bold border-b-2 border-blue-500 inline-block pb-1 mb-10 text-center md:text-left">
-      Proyectos
+    <h2
+      class="text-3xl font-bold border-b-2 border-blue-500 inline-block pb-1 mb-10 text-center md:text-left opacity-0 animate-fade-up">
+      Proyectos Destacados
     </h2>
 
-    <!-- Grid de proyectos -->
+    <!-- Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-      <!-- Proyecto 1 -->
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
-        <img src="../../../assets/proyectos/BlogDeCafe-1.jpg" alt="Proyecto 1"
-             class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+      <!-- ================= CARD 1 ================= -->
+      <div
+        class="project-card bg-gray-800 rounded-xl shadow-xl overflow-hidden opacity-0 animate-fade-up delay-200 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+        <img src="../../../assets/proyectos/BlogDeCafe-1.jpg"
+          alt="Gestor de Tareas"
+          class="w-full h-48 object-cover hover:scale-110 transition duration-500">
+
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Gestor de Tareas</h3>
+
           <p class="text-gray-400 mb-4">
-            Aplicación web con Angular + Node.js para gestionar tareas y usuarios.
+            Aplicación full stack para gestión de tareas y usuarios con autenticación JWT y API REST.
           </p>
-          <!-- Tecnologías -->
+
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="bg-red-500 text-xs px-2 py-1 rounded">Angular</span>
             <span class="bg-green-500 text-xs px-2 py-1 rounded">Node.js</span>
@@ -26,48 +34,84 @@
         </div>
       </div>
 
-      <!-- Proyecto 2 -->
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
-        <img src="../../../assets/proyectos/1.jpg" alt="Proyecto 2"
-             class="w-full h-48 object-cover transform hover:scale-110 transition duration-500">
+      <!-- ================= CARD 2 ================= -->
+      <div
+        class="project-card bg-gray-800 rounded-xl shadow-xl overflow-hidden opacity-0 animate-fade-up delay-400 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+        <img src="../../../assets/proyectos/1.jpg"
+          alt="E-commerce"
+          class="w-full h-48 object-cover hover:scale-110 transition duration-500">
+
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">E-commerce Demo</h3>
+
           <p class="text-gray-400 mb-4">
-            Tienda online con carrito de compras y autenticación de usuarios.
+            Tienda online con carrito, login de usuarios, backend REST y base de datos relacional.
           </p>
-          <!-- Tecnologías -->
+
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="bg-blue-500 text-xs px-2 py-1 rounded">Angular</span>
             <span class="bg-purple-500 text-xs px-2 py-1 rounded">Express</span>
-            <span class="bg-green-600 text-xs px-2 py-1 rounded">PostgreSQL</span>
+            <span class="bg-green-600 text-xs px-2 py-1 rounded">MySQL</span>
           </div>
         </div>
       </div>
 
-      <!-- Proyecto 3 -->
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
-        <img src="../../../assets/proyectos/2.jpg" alt="Proyecto 3"
-             class="w-full h-48 object-cover transform hover:scale-110 hover:brightness-110 transition duration-500">
+      <!-- ================= CARD 3 ================= -->
+      <div
+        class="project-card bg-gray-800 rounded-xl shadow-xl overflow-hidden opacity-0 animate-fade-up delay-600 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+
+        <img src="../../../assets/proyectos/2.jpg"
+          alt="Portfolio"
+          class="w-full h-48 object-cover hover:scale-110 hover:brightness-110 transition duration-500">
+
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Portfolio Web</h3>
+
           <p class="text-gray-400 mb-4">
-            Mi portafolio personal construido con Angular y Tailwind CSS.
+            Portafolio personal desarrollado con Angular y Tailwind CSS optimizado para rendimiento y SEO.
           </p>
-          <!-- Tecnologías -->
+
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="bg-red-500 text-xs px-2 py-1 rounded">Angular</span>
             <span class="bg-cyan-500 text-xs px-2 py-1 rounded">Tailwind</span>
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- CTA -->
-    <div class="text-center mt-10">
+    <div class="text-center mt-12 opacity-0 animate-fade-up delay-700">
       <a href="https://github.com/diiegodm" target="_blank"
-         class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
-        Ver más proyectos en GitHub
+        class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 hover:scale-105 transition-all shadow-lg">
+        Ver más proyectos en GitHub →
       </a>
     </div>
+
   </div>
 </section>
+
+
+<!-- ===================== ANIMACIONES ===================== -->
+<style>
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s forwards;
+}
+
+.delay-200 { animation-delay: 0.2s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+</style>

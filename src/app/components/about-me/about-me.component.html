@@ -1,39 +1,59 @@
+<!-- ===================== SOBRE MÍ ANIMADO ===================== -->
 <section class="bg-black text-white py-16 px-8">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
     <!-- Columna izquierda (texto) -->
-    <div class="space-y-6">
-      <h2 class="text-3xl font-bold border-b-2 border-blue-500 inline-block pb-1">ASobre mi</h2>
-      <p class="text-blue-400 text-3xl">{{correo}}</p>
-      <p class="text-gray-300 text-2xl leading-relaxed">
-        Soy un Full Stack Developer con experiencia en Node.js, Angular, HTML5 y CSS3. Desarrollo aplicaciones web
-        completas,
-        desde el frontend hasta el backend y bases de datos. Experiencia en APIs REST, seguridad y optimización de
-        rendimiento.
-        También soy creativo, entusiasta y autodidacta, siempre buscando
-        optimizar rendimiento y seguridad en las aplicaciones.
+    <div class="space-y-6 opacity-0 transform translate-x-8 animate-fade-slide-left">
+
+      <h2 class="text-3xl font-bold border-b-2 border-blue-500 inline-block pb-1">
+        Sobre mí
+      </h2>
+
+      <!-- Correo destacado -->
+      <p class="text-blue-400 text-xl md:text-2xl">{{ correo }}</p>
+
+      <!-- Perfil profesional -->
+      <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+        Desarrollador Full Stack con formación intensiva y experiencia práctica en la creación de aplicaciones web completas.
+        Especializado en backend con Node.js y frontend con Angular. Enfocado en construir soluciones funcionales, escalables y bien estructuradas.
+        Abierto a proyectos freelance y oportunidades junior.
       </p>
-       <a href="/assets/cv/CV Diego Arevalo C.pdf" download class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
-    Descargar CV
-  </a>
-      <div class="pt-6">
-        <p class="font-semibold"></p>
-        <p class="text-blue-400"></p>
-      </div>
+
+      <!-- Botón descarga CV -->
+      <a href="/assets/cv/CV diego free.pdf" download
+         class="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition shadow-lg">
+        Descargar CV
+      </a>
     </div>
 
-    <!-- Columna derecha (imagen con overlay en media cara) -->
-   <div class="relative flex justify-start">
-  <img src="../../../assets/imagenes/Diseño sin título (1).png"
-       alt="Profile picture"
-       class="rounded-lg shadow-lg object-cover h-full w-full max-w-md" />
-
-  <div ></div>
-</div>
-
+    <!-- Columna derecha (imagen) -->
+    <div class="relative flex justify-center md:justify-start opacity-0 transform translate-x-8 animate-fade-slide-left delay-200">
+      <img src="../../../assets/imagenes/Diseño sin título (1).png"
+           alt="Foto de Diego Arévalo"
+           class="rounded-lg shadow-lg object-cover h-full w-full max-w-md" />
+    </div>
 
   </div>
 </section>
 
+<!-- ===================== ESTILOS ANIMACIONES ===================== -->
+<style>
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+.animate-fade-slide-left {
+  animation: fadeSlideLeft 0.8s forwards;
+}
 
+.delay-200 {
+  animation-delay: 0.2s;
+}
+</style>
